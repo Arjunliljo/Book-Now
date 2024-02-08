@@ -1,0 +1,40 @@
+// logo that is in the header
+.logo{
+    height: 3.25rem;
+}
+
+// the form that contains search bar and search icon
+.search{
+
+    &__input{
+
+    }
+
+    &__button{
+
+
+        &-icon{
+
+
+        }
+    }
+}
+
+// last part of the header. This is where all the navigations in the header exists including user icon
+.user-nav{
+
+    // the box that contain the icon and the popup notification
+    &__icon-box{
+
+    }
+
+    // the icon of of nav in header
+    &__icons{
+
+    }
+
+    // the popup of the icon
+    &__popup{
+        
+    }
+}

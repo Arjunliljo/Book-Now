@@ -18,12 +18,13 @@
   flex: 1; }
 
 .side-bar {
-  background-color: var(--grey-dark-1);
   flex: 0 0 18%; }
 
 .hotel-view {
-  flex: 1;
-  background-color: orange; }
+  flex: 1; }
+
+.logo {
+  height: 3.25rem; }
 
 /*
 COLORS

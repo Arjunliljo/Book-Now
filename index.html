@@ -10,29 +10,62 @@
         
         <title>trillo &mdash; Your all-in-one booking app</title>
     </head>
-    <body>
+    
+    <!-- custom background color is added to body -->
+    <body>  
+            <!-- this is where all contents are included and the center of the body -->
             <div class="container">
+
+                <!-- header part includes the logo search bar and user icons responsible for the top most section of the container -->
                 <header class="header">
+
+                    <!-- logo of the company -->
                     <img src="./img/logo.png" alt="logo" class="logo">
 
+
+                    <!-- created a form that includes the search input and svg search icon only. In the header-->
                     <form action="#" class="search">
-                        <input type="text" class="search__input">
+                        <input type="text" class="search__input" placeholder="Search Hotels...">
                         <button class="search__button">
                             <svg class="search__button-icon">
-                                
+                                <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
                             </svg>
                         </button>
                     </form>
+                    
+                    <!-- navigations like bookmark, chats and user icon and login in the end of the header -->
+                    <nav class="user-nav">
+                        <div class="user-nav__icon-box">
+                            <use class="user-nav__icons" xlink:href="./img/sprite.svg#icon-bookmark"></use>
+                            <span class="user-nav__bookmark">3</span>
+                        </div>
+                        <div class="user-nav__icon-box">
+                            <use class="user-nav__icons" xlink:href="./img/sprite.svg#icon-chat"></use>
+                            <span class="user-nav__popup">3</span>
+                        </div>
+                        <div class="user-nav__user">
+                            <img src="./img/user-1.jpg" alt="user photo" class="user-nav__img">
+                            <span class="user-nav__popup">Jonas</span>
+                        </div>
+                    </nav>
+              
                 </header>
 
+                <!-- this is where the class that contains everything except header but everything else in the container-->
                 <div class="content">
+
+                    <!-- The left huge navigation side bar that has 100% height of the main container itself -->
                     <nav class="side-bar">
                         navigation part
                     </nav>
+                  
+                    <!-- The area where hotel images and other details should be displayed main area of the container -->
                     <main class="hotel-view">
                         hotel view
                     </main>
+                
                 </div>
             </div>
-    </body>
+   
+        </body>
 </html>
