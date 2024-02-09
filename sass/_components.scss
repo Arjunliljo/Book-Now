@@ -1,6 +1,7 @@
 // logo that is in the header
 .logo{
     height: 3.25rem;
+    margin-left: 3%;
 }
 
 // the form that contains search bar and search icon
@@ -31,6 +32,7 @@
             font-weight: 100;
             color: var(--grey-light-4);
         }
+
     }
 
     &__button{
@@ -55,14 +57,22 @@
 
 // last part of the header. This is where all the navigations in the header exists including user icon
 .user-nav{
-    background-color: lightgreen;
     display: flex;
-    flex: 0 0 20%;
     align-items: center;
-    justify-content: space-evenly;
-    // the box that contain the icon and the popup notification
+    height: 100%;
+    // the individual boxs that contain the icons and the popup notification also user img
     &__icon-box{
-
+        // using padding so i don't need to justify
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        align-self: stretch;
+        position: relative;
+        gap: .8rem;
+        &:hover{
+            background-color: var(--grey-light-3);
+        }
     }
 
     // the svg icons of nav in header
@@ -74,19 +84,34 @@
 
     // the popup of the icon
     &__popup{
-        
+        background-color: var(--color-primery);
+        font-size: .8rem;
+        border-radius: 50%;
+        height: 1.75rem;
+        width: 1.75rem;
+        color: #fff;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     // the container of user info
     &__user{
 
+        display: flex;
+        align-items: center;
+
         &-img{
             height: 3rem;
             width: 3rem;
-        }
-        
+            border-radius: 50%;
+        }    
         &-name{
-
+            font-weight: 500;
         }
     }
 }
