@@ -7,8 +7,7 @@
     background-color: var(--grey-light-2);
     box-shadow: 0 2rem 5rem var(--opacity-mid);
     border-radius: 3px;
-    display: flex;
-    flex-direction: column;
+
 }
 
 // the one and only header that contains logo, form-input, nav-icons, user-img
@@ -25,16 +24,23 @@
 // contains the left side bar and the main section of the container
 .content{
     display: flex;
-    flex: 1;
 }
 
 // huge sidebar in the left side of the container that has 100% height
-.side-bar{
+.sidebar{
     // background-color: var(--grey-dark-1);
-    flex: 0 0 18%;
+   background-color: var(--grey-dark-1);
+   flex: 0 0 18%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-width: 150px;
+   padding: 3.5rem 0rem;
 }
 
 // main area of the container that includes all the details of the hotel
 .hotel-view{
-    flex: 1;
+    background-color: orange;
+    height: 80rem;
+    flex: 0 0 82%;
 }

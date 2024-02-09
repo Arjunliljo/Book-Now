@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &__input{
         border: none;
         font-weight: inherit;
@@ -60,6 +61,7 @@
     display: flex;
     align-items: center;
     height: 100%;
+
     // the individual boxs that contain the icons and the popup notification also user img
     &__icon-box{
         // using padding so i don't need to justify
@@ -114,4 +116,70 @@
             font-weight: 500;
         }
     }
+}
+
+.sidebar__list{
+    list-style: none;
+    font-size: 1.4rem;
+    color: var(--grey-light-1);
+
+    & > *:not(:last-child) {
+        margin-bottom: .3rem;
+    }
+
+    &-box{
+        padding: 1.8rem;
+        position: relative;
+        transition: all .5s;
+
+        &::before{
+            content: "";
+            height: 100%;
+             z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: var(--color-primery);
+            width: 3px;
+            transform: scaleY(0);
+            transform-origin: center;
+            transition: transform .2s, width .5s cubic-bezier(1,0,0,1) .3s, background-color .2s;
+        }
+
+        &:hover::before{
+            transform: scaleY(1);
+            width: 100%;
+            cursor: pointer;
+        }
+        &:active::before{
+           background-color: var(--color-primery-dark);
+        }
+    }
+
+
+    &-link{
+        text-decoration: none;
+        color: var(--grey-light-1);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        z-index: 2;
+        position: relative;
+        
+    }
+
+    &-icon{
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: currentColor;
+    }
+}   
+
+.copyright{
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--grey-light-4);
+    opacity: .7;
 }

@@ -4,9 +4,7 @@
   margin: 8rem auto;
   background-color: var(--grey-light-2);
   box-shadow: 0 2rem 5rem var(--opacity-mid);
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column; }
+  border-radius: 3px; }
 
 .header {
   font-size: 1.4rem;
@@ -18,14 +16,21 @@
   align-items: center; }
 
 .content {
-  display: flex;
-  flex: 1; }
+  display: flex; }
 
-.side-bar {
-  flex: 0 0 18%; }
+.sidebar {
+  background-color: var(--grey-dark-1);
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 150px;
+  padding: 3.5rem 0rem; }
 
 .hotel-view {
-  flex: 1; }
+  background-color: orange;
+  height: 80rem;
+  flex: 0 0 82%; }
 
 .logo {
   height: 3.25rem;
@@ -108,6 +113,55 @@
       border-radius: 50%; }
     .user-nav__user-name {
       font-weight: 500; }
+
+.sidebar__list {
+  list-style: none;
+  font-size: 1.4rem;
+  color: var(--grey-light-1); }
+  .sidebar__list > *:not(:last-child) {
+    margin-bottom: .3rem; }
+  .sidebar__list-box {
+    padding: 1.8rem;
+    position: relative;
+    transition: all .5s; }
+    .sidebar__list-box::before {
+      content: "";
+      height: 100%;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--color-primery);
+      width: 3px;
+      transform: scaleY(0);
+      transform-origin: center;
+      transition: transform 0.2s, width 0.5s cubic-bezier(1, 0, 0, 1) 0.3s, background-color 0.2s; }
+    .sidebar__list-box:hover::before {
+      transform: scaleY(1);
+      width: 100%;
+      cursor: pointer; }
+    .sidebar__list-box:active::before {
+      background-color: var(--color-primery-dark); }
+  .sidebar__list-link {
+    text-decoration: none;
+    color: var(--grey-light-1);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    z-index: 2;
+    position: relative; }
+  .sidebar__list-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: currentColor; }
+
+.copyright {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--grey-light-4);
+  opacity: .7; }
 
 /*
 COLORS
