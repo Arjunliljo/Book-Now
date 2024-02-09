@@ -117,7 +117,7 @@
         }
     }
 }
-
+// the ul on the side bar contains all the contents except the copy right
 .sidebar__list{
     list-style: none;
     font-size: 1.4rem;
@@ -127,6 +127,7 @@
         margin-bottom: .3rem;
     }
 
+    // the individual containers that contains the hyper link > icon and text
     &-box{
         padding: 1.8rem;
         position: relative;
@@ -156,7 +157,7 @@
         }
     }
 
-
+    // hyperlink that contains the icon and text
     &-link{
         text-decoration: none;
         color: var(--grey-light-1);
@@ -168,7 +169,7 @@
         position: relative;
         
     }
-
+    // svg icons in the side bar
     &-icon{
         width: 2.5rem;
         height: 2.5rem;
