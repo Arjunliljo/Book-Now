@@ -13,9 +13,13 @@
 
 // the one and only header that contains logo, form-input, nav-icons, user-img
 .header{
+    font-size: 1.4rem;
     height: 7rem;
     background-color: white;
     border-bottom: 2px solid var(--grey-light-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 // contains the left side bar and the main section of the container

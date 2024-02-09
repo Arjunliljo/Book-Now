@@ -5,36 +5,88 @@
 
 // the form that contains search bar and search icon
 .search{
-
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__input{
+        border: none;
+        font-weight: inherit;
+        font-size: inherit;
+        padding:.7rem;
+        padding-left: 2rem;
+        border-radius: 100px;
+        background-color: var(--grey-light-2);
+        width: 90%;
+        transition: width .3s;
+        margin-right: -3.5rem;
 
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: var(--grey-light-3);
+        }
+
+        &::placeholder{
+            font-weight: 100;
+            color: var(--grey-light-4);
+        }
     }
 
     &__button{
+        background-color: transparent;
+        border: none;
+        transition: all .3s;
 
-
+        &:focus{
+            outline: none;
+        }
+        &:active{
+            transform: translateY(2px);
+        }
         &-icon{
-
-
+            height: 2rem;
+            width: 2rem;
+            cursor: pointer;
+            fill: var(--grey-dark-3);
         }
     }
 }
 
 // last part of the header. This is where all the navigations in the header exists including user icon
 .user-nav{
-
+    background-color: lightgreen;
+    display: flex;
+    flex: 0 0 20%;
+    align-items: center;
+    justify-content: space-evenly;
     // the box that contain the icon and the popup notification
     &__icon-box{
 
     }
 
-    // the icon of of nav in header
+    // the svg icons of nav in header
     &__icons{
-
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: var(--grey-dark-3);
     }
 
     // the popup of the icon
     &__popup{
         
+    }
+
+    // the container of user info
+    &__user{
+
+        &-img{
+            height: 3rem;
+            width: 3rem;
+        }
+        
+        &-name{
+
+        }
     }
 }
