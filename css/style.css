@@ -163,6 +163,14 @@
   color: var(--grey-light-4);
   opacity: .7; }
 
+.gallary {
+  display: flex; }
+  .gallary__box {
+    background-color: white; }
+    .gallary__box img {
+      width: 100%;
+      display: block; }
+
 /*
 COLORS
 

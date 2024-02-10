@@ -184,3 +184,19 @@
     color: var(--grey-light-4);
     opacity: .7;
 }
+
+.gallary{
+
+    display: flex;
+
+    &__box{
+       background-color: white;
+       
+        & img{
+          width: 100%;
+          display: block;
+        }
+    }
+
+ 
+}
